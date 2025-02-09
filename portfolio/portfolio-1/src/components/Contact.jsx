@@ -5,12 +5,15 @@ import Reveal from "./Reveal";
 
 const Contact = () => {
   return (
-    <div className="px-6 max-w-[1000px] mx-auto md:my-12" id="contact">
+    <div
+      className="px-6 max-w-[1000px] mx-auto md:my-16 py-12 bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl shadow-2xl"
+      id="contact"
+    >
       <Reveal>
         <div className="grid md:grid-cols-2 gap-12 place-items-center">
           <div className="text-gray-300">
             <div className="my-3">
-              <h3 className="text-4xl font-semibold text-white mb-5">
+              <h3 className="text-5xl font-extrabold text-white mb-6 text-center md:text-left">
                 About <span className="text-purple-500">Me</span>
               </h3>
               <p className="text-justify leading-7 w-11/12 mx-auto text-lg text-gray-200">
@@ -21,28 +24,28 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="flex mt-10 items-center gap-7">
-              <div className="bg-gray-800/60 p-5 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-                <h3 className="text-3xl font-semibold text-white">
+            <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-10">
+              <div className="bg-gray-800/60 p-6 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
+                <h3 className="text-4xl font-bold text-white">
                   11<span>+</span>
                 </h3>
-                <p className="text-xs md:text-base text-gray-400">Projects</p>
+                <p className="text-md md:text-lg text-gray-400">Projects</p>
               </div>
 
-              <div className="bg-gray-800/60 p-5 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-                <h3 className="text-3xl font-semibold text-white">
+              <div className="bg-gray-800/60 p-6 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
+                <h3 className="text-4xl font-bold text-white">
                   1.5<span>+</span>
                 </h3>
-                <p className="text-xs md:text-base text-gray-400">
+                <p className="text-md md:text-lg text-gray-400">
                   Years of Experience
                 </p>
               </div>
 
-              <div className="bg-gray-800/60 p-5 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
-                <h3 className="text-3xl font-semibold text-white">
+              <div className="bg-gray-800/60 p-6 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
+                <h3 className="text-4xl font-bold text-white">
                   10<span>+</span>
                 </h3>
-                <p className="text-xs md:text-base text-gray-400">
+                <p className="text-md md:text-lg text-gray-400">
                   Happy Clients
                 </p>
               </div>
@@ -52,10 +55,10 @@ const Contact = () => {
           <form
             action="https://getform.io/f/placeYourEndpointHere"
             method="POST"
-            className="max-w-xl p-8 rounded-lg bg-purple-700/20 shadow-lg"
+            className="max-w-xl p-10 rounded-lg bg-purple-800/20 shadow-xl backdrop-blur-md"
             id="form"
           >
-            <p className="text-gray-100 font-bold text-xl mb-2 text-center">
+            <p className="text-gray-100 font-bold text-2xl mb-4 text-center">
               Let's Connect!
             </p>
             <input
@@ -63,14 +66,14 @@ const Contact = () => {
               id="name"
               placeholder="Your Name ..."
               name="name"
-              className="mb-4 w-full rounded-md text-white border-2 border-purple-600 p-3  focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="mb-4 w-full rounded-md text-white border-2 border-purple-600 p-3 bg-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
             <input
               type="email"
               id="email"
               placeholder="Your Email ..."
               name="email"
-              className="mb-4 w-full rounded-md text-white border-2 border-purple-600 p-3  focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="mb-4 w-full rounded-md text-white border-2 border-purple-600 p-3 bg-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
             <textarea
               name="textarea"
@@ -78,11 +81,11 @@ const Contact = () => {
               cols="30"
               rows="4"
               placeholder="Your Message ..."
-              className="mb-4 w-full rounded-md text-white border-2 border-purple-600 p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="mb-4 w-full rounded-md text-white border-2 border-purple-600 p-3 bg-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-purple-600 hover:bg-purple-700 transition-colors duration-300"
+              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-purple-600 hover:bg-purple-700 transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Send Message
             </button>

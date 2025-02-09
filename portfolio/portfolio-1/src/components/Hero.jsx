@@ -2,10 +2,13 @@ import React from "react";
 import profilepic from "../assets/profpic.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
+import { motion } from "framer-motion";
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
   AiOutlineLinkedin,
+  AiOutlineFacebook,
+  AiOutlineTwitter,
 } from "react-icons/ai";
 import {
   DiCss3,
@@ -14,7 +17,6 @@ import {
   DiNodejsSmall,
   DiReact,
 } from "react-icons/di";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -91,21 +93,33 @@ const Hero = () => {
               >
                 <AiOutlineGithub />
               </motion.a>
-
               <motion.a
                 whileHover={{ scale: 1.2, color: "#0077b5" }}
-                href="https://www.linkedin.com/in/syed-omer-ali-b73501324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                href="https://www.linkedin.com/in/syed-omer-ali-b73501324"
                 className="transition-all duration-300"
               >
                 <AiOutlineLinkedin />
               </motion.a>
-
               <motion.a
                 whileHover={{ scale: 1.2, color: "#E1306C" }}
-                href="https://www.instagram.com/syedomer934/profilecard/?igsh=bGxqaGcxOXZ1NXg2"
+                href="https://www.instagram.com/syedomer934"
                 className="transition-all duration-300"
               >
                 <AiOutlineInstagram />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2, color: "#1877F2" }}
+                href="https://www.facebook.com/share/15dm4xpa4T/"
+                className="transition-all duration-300"
+              >
+                <AiOutlineFacebook />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.2, color: "#1DA1F2" }}
+                href="https://x.com/SyedOmerAl20006"
+                className="transition-all duration-300"
+              >
+                <AiOutlineTwitter />
               </motion.a>
             </div>
           </motion.div>

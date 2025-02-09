@@ -37,16 +37,14 @@ function Navbar() {
     <>
       <div className="fixed top-0 left-0 w-full bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] bg-opacity-90 backdrop-blur-md shadow-lg z-50">
         <div className="max-w-[1300px] mx-auto flex justify-between items-center px-12 h-20 text-white">
-          
           <a
             href="#"
-            className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 hover:from-purple-500 hover:to-blue-400 transition-all duration-500"
+            className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 hover:from-purple-500 hover:to-blue-400 transition-all duration-500 drop-shadow-lg"
           >
             Syed Omer Ali
           </a>
 
-          
-          <ul className="hidden md:flex gap-12 text-lg font-medium">
+          <ul className="hidden md:flex gap-12 text-lg font-semibold">
             {["About", "Portfolio", "Contact"].map((item, index) => (
               <li key={index} className="relative group cursor-pointer">
                 <Link
@@ -54,17 +52,14 @@ function Navbar() {
                   smooth={true}
                   offset={50}
                   duration={500}
-                  className="text-white transition-all duration-300 group-hover:text-blue-400"
+                  className="text-white transition-all duration-300 group-hover:text-blue-400 hover:underline"
                 >
                   {item}
                 </Link>
-                
-                <span className="absolute left-0 bottom-[-5px] w-0 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-500 group-hover:w-full shadow-lg group-hover:shadow-blue-400/50"></span>
               </li>
             ))}
           </ul>
 
-          
           <button
             onClick={toggleNav}
             aria-label="Toggle Navigation"
@@ -73,14 +68,13 @@ function Navbar() {
             {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
           </button>
 
-          
           {nav && (
             <motion.div
               initial="closed"
               animate={nav ? "open" : "closed"}
               variants={menuVariants}
               className="fixed left-0 top-0 w-full min-h-screen bg-[#0a0f1d] bg-opacity-95 flex items-center justify-center z-40"
-              onClick={closeNav} 
+              onClick={closeNav}
             >
               <ul className="font-semibold text-4xl space-y-8 text-center text-white">
                 {["About", "Portfolio", "Contact"].map((item, index) => (
@@ -91,12 +85,10 @@ function Navbar() {
                       smooth={true}
                       offset={50}
                       duration={500}
-                      className="transition-all duration-300 group-hover:text-blue-400"
+                      className="transition-all duration-300 group-hover:text-blue-400 hover:underline"
                     >
                       {item}
                     </Link>
-                    
-                    <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-5px] w-0 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-500 group-hover:w-full shadow-lg group-hover:shadow-blue-400/50"></span>
                   </li>
                 ))}
               </ul>
@@ -104,8 +96,6 @@ function Navbar() {
           )}
         </div>
       </div>
-
-      
       <div className="h-20"></div>
     </>
   );
