@@ -33,13 +33,13 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://www.facebook.com/yourprofile"
+            href="https://www.facebook.com/share/15dm4xpa4T/"
             className="hover:text-blue-500 transition-transform duration-300 hover:scale-125 hover:rotate-6"
           >
             <FaFacebookSquare />
           </a>
           <a
-            href="https://twitter.com/yourprofile"
+            href="https://x.com/SyedOmerAl20006"
             className="hover:text-blue-400 transition-transform duration-300 hover:scale-125 hover:-rotate-6"
           >
             <FaTwitterSquare />

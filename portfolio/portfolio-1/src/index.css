@@ -56,3 +56,47 @@ button:hover {
     opacity: 0.6;
   }
 }
+
+.cursor {
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle, rgba(178, 19, 202, 0.8), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease-out;
+}
+
+.animated-text {
+  background: linear-gradient(90deg, #ff00ff, #6600ff, #00ffff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 3s infinite linear;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 0 0 5px #b219ca, 0 0 10px #b219ca, 0 0 20px #b219ca;
+}
+
+.neon-border {
+  border: 2px solid #b219ca;
+  box-shadow: 0 0 5px #b219ca, 0 0 10px #b219ca;
+}
